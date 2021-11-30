@@ -1,0 +1,142 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "name": "Test Deck #1",
+      "description": "This is a test deck and it will have test cards.",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "deckId": 1
+    },
+    {
+      "id": 2,
+      "front": "How do you modify the state of a different React component?",
+      "back": "Not at all! State is visible to the component only.",
+      "deckId": 1
+    },
+    {
+      "id": 3,
+      "front": "How do you pass data 'down' to a React child component?",
+      "back": "As properties or props",
+      "deckId": 1
+    },
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "cards": [],
+      "front": "b",
+      "back": "b",
+      "deckId": 1,
+      "id": 7
+    },
+    {
+      "front": "",
+      "back": "",
+      "id": 8
+    },
+    {
+      "front": "",
+      "back": "",
+      "id": 9
+    },
+    {
+      "front": "  ",
+      "back": "  ",
+      "id": 10
+    },
+    {
+      "front": "Is this a new card?",
+      "back": "Indeed, it is.",
+      "id": 11
+    },
+    {
+      "front": "Card #12",
+      "back": "Back of card",
+      "id": 12
+    },
+    {
+      "front": "This is the front of the card",
+      "back": "This is the back of the card.",
+      "id": 13
+    },
+    {
+      "front": "Will this work",
+      "back": "i hope",
+      "id": 14
+    },
+    {
+      "front": "will this edit",
+      "back": "i hope",
+      "id": 15
+    },
+    {
+      "front": "Efgh",
+      "back": "Abcd",
+      "id": 16
+    },
+    {
+      "front": "Front",
+      "back": "Back of card",
+      "id": 17
+    },
+    {
+      "front": "Card #1",
+      "back": "Card",
+      "deckId": 3,
+      "id": 18
+    },
+    {
+      "cards": [],
+      "front": "Test",
+      "back": "Test",
+      "deckId": 3,
+      "id": 20
+    },
+    {
+      "cards": [],
+      "front": "Front front",
+      "back": "back back",
+      "deckId": 3,
+      "id": 22
+    },
+    {
+      "cards": [],
+      "front": "Test",
+      "back": "Test",
+      "deckId": 3,
+      "id": 23
+    },
+    {
+      "cards": [],
+      "front": "Test front",
+      "back": "Test backb",
+      "deckId": 3,
+      "id": 24
+    }
+  ]
+}
