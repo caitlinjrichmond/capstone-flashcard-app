@@ -36,8 +36,10 @@ function EditDeck() {
           </li>
         </ol>
       </nav>
-      <h1>{deckName}</h1>
-      <EditDeckForm fullDeck={fullDeck} history={history} />
+      <h1>{fullDeck.id ? deckName : "Loading..."}</h1>
+    { fullDeck.id ? (
+        <EditDeckForm fullDeck={fullDeck} history={history} /> 
+        ): <p>Loading...</p> }
     </div>
   );
 }
