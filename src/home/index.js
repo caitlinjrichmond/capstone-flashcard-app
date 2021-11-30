@@ -18,7 +18,6 @@ function Home() {
 
   return (
     <div>
-      <h1>Home Page</h1>
       <Link to={"/decks/new"}>
         <button type="button" className="btn btn-secondary">
           <svg
