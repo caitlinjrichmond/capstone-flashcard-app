@@ -1,16 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import {
-  Route,
-  Switch,
-  Link,
-  useRouteMatch,
-  useParams,
-  useHistory,
-} from "react-router-dom";
-import EditDeck from "../decks/edit-deck";
-import AddCard from "../card/AddCard";
-import Study from "./study";
+import { Link, useRouteMatch, useParams, useHistory } from "react-router-dom";
 import CardList from "../card";
 import { readDeck } from "../utils/api";
 import { deleteDeck } from "../utils/api/index";
@@ -141,17 +131,6 @@ function IndividualDeck() {
       </div>
       <h2>Cards</h2>
       <CardList deckId={fullDeck.id} cardslist={fullDeck.cards} />
-      {/* <Switch>
-        <Route path={`/decks/${deckId}/edit`}>
-          <EditDeck name={fullDeck.name}/>
-        </Route>
-        <Route path={`${url}/cards/new`}>
-          <AddCard />
-        </Route>
-        <Route path={`${url}/study`}>
-          <Study />
-        </Route>
-      </Switch> */}
     </div>
   );
 }
