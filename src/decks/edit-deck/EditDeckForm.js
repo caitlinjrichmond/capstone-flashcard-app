@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import { updateDeck } from "../../utils/api/index";
 
 function EditDeckForm({ fullDeck, history }) {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const [name, setName] = useState(`${fullDeck.name}`);
+  const [description, setDescription] = useState(`${fullDeck.description}`);
   const id = fullDeck.id;
   const deckId = useParams().deckId;
 
@@ -37,7 +37,7 @@ function EditDeckForm({ fullDeck, history }) {
           <input
             id="name"
             type="text"
-            placeholder={fullDeck.name}
+            // placeholder={fullDeck.name}
             name="name"
             onChange={handleNameChange}
             value={name}
@@ -50,7 +50,7 @@ function EditDeckForm({ fullDeck, history }) {
           <textarea
             id="description"
             type="textarea"
-            placeholder={fullDeck.description}
+            // placeholder={fullDeck.description}
             rows="4"
             cols="50"
             name="description"
