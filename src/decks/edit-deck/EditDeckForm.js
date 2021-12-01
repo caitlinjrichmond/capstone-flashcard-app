@@ -29,7 +29,6 @@ function EditDeckForm({ fullDeck, history }) {
 
   return (
     <div>
-      {/* <h1>{fullDeck.name}</h1> */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">
           Name
@@ -37,7 +36,6 @@ function EditDeckForm({ fullDeck, history }) {
           <input
             id="name"
             type="text"
-            // placeholder={fullDeck.name}
             name="name"
             onChange={handleNameChange}
             value={name}
@@ -50,7 +48,6 @@ function EditDeckForm({ fullDeck, history }) {
           <textarea
             id="description"
             type="textarea"
-            // placeholder={fullDeck.description}
             rows="4"
             cols="50"
             name="description"
