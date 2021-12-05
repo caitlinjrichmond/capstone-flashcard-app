@@ -16,7 +16,7 @@ function AddCard() {
       setDeck(deckFromAPI);
     }
     loadDeck();
-  }, [deckId]);
+  }, [deckId, allCards]);
 
   const handleClick = (event) => {
     history.push(`/decks/${deckId}`);

@@ -17,7 +17,7 @@ function EditDeck() {
       setFullDeck(deckFromAPI);
     }
     loadFullDeck();
-  }, [deckId]);
+  }, [deckId, allCards]);
 
   return (
     <div>

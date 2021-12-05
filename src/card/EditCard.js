@@ -18,7 +18,7 @@ function EditCard() {
       setFullDeck(deckFromAPI);
     }
     loadFullDeck();
-  }, [deckId]);
+  }, [deckId, allCards]);
 
   useEffect(() => {
     async function loadCard() {

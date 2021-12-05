@@ -17,7 +17,7 @@ function Study() {
       setFullDeck(deckFromAPI);
     }
     loadFullDeck();
-  }, [deckId]);
+  }, [deckId, allCards]);
 
   return (
     <div>

@@ -18,7 +18,7 @@ function IndividualDeck() {
       setFullDeck(deckFromAPI);
     }
     loadFullDeck();
-  }, [deckId, url]);
+  }, [deckId, url, allCards]);
 
   function handleDelete() {
     if (

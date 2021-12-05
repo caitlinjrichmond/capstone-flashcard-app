@@ -6,15 +6,15 @@ import { listDecks } from "../utils/api";
 
 function Home() {
   const [decks, setDecks] = useState([]);
-  const allDecks = listDecks();
+  // const allDecks = listDecks();
 
   useEffect(() => {
     async function loadDecks() {
-      const decksFromAPI = await allDecks;
+      const decksFromAPI = await listDecks();
       setDecks(decksFromAPI);
     }
     loadDecks();
-  }, []);
+  },[]);
 
   return (
     <div>
