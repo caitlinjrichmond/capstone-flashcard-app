@@ -24,10 +24,9 @@ function Decks({ decks }) {
                 <div className="bd-highlight">
                   <h4>{deck.name}</h4>
                 </div>
-                <div className="ml-auto bd-highlight">
+                {/* <div className="d-flex flex-row-reverse">
                   <p style={{ fontSize: "12px" }}>{deck.cards.length} cards</p>
-                  {/* {deck.cards.length > 1 ? "Cards" : "Card"} */}
-                </div>
+                </div> */}
               </div>
               <p>{deck.description}</p>
               <div className="d-flex bd-highlight">

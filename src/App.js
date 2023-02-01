@@ -9,35 +9,40 @@ import Layout from "./Layout";
  */
 
 function App() {
-  const [decks, setDecks] = useState([]);
+  // const [decks, setDecks] = useState([]);
 
-  useEffect(() => {
-    async function loadDecks() {
-      const response = await fetch("http://localhost:8080/decks");
-      const decksFromAPI = await response.json();
-      setDecks(decksFromAPI);
-    }
-    loadDecks();
-  }, []);
+  // useEffect(() => {
+  //   async function loadDecks() {
+  //     const response = await fetch("http://localhost:8080/decks");
+  //     const decksFromAPI = await response.json();
+  //     setDecks(decksFromAPI);
+  //   }
+  //   loadDecks();
+  // }, []);
 
-  console.log(decks);
+  // console.log(decks);
 
   return (
-    <div className="app-routes">
-      {decks ? decks.map((deck) => (
-        <div>
-          <h1>Deck {deck.id}</h1>
-          <br />
-          <p>
-            <u>Title</u>: {deck.name}
-          </p>
-          <p>
-            <u>Descripton</u>: {deck.description}
-          </p>
-          <Cards deckId={deck.id} />
-        </div>
-      )) : <p>Loading...</p>}
+    // <div className="app-routes">
+    //   {decks ? decks.map((deck) => (
+    //     <div>
+    //       <h1>Deck {deck.id}</h1>
+    //       <br />
+    //       <p>
+    //         <u>Title</u>: {deck.name}
+    //       </p>
+    //       <p>
+    //         <u>Descripton</u>: {deck.description}
+    //       </p>
+    //       <Cards deckId={deck.id} />
+    //     </div>
+    //   )) : <p>Loading...</p>}
+    //   <Layout />
+    // </div> 
+    <div>
+      <Layout />
     </div>
+
   );
 }
 
