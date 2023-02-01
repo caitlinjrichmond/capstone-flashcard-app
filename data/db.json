@@ -11,8 +11,8 @@
       "id": 2
     },
     {
-      "name": "Test Deck #1",
-      "description": "This is a test deck and it will have test cards.",
+      "name": "Test Deck #1 in a Million",
+      "description": "This is a test deck and it will have test cards!!!",
       "id": 3
     }
   ],
@@ -123,13 +123,6 @@
       "back": "back back",
       "deckId": 3,
       "id": 22
-    },
-    {
-      "cards": [],
-      "front": "Test",
-      "back": "Test",
-      "deckId": 3,
-      "id": 23
     },
     {
       "cards": [],
