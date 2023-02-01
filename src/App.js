@@ -40,7 +40,7 @@ function App() {
 
 //     </div> 
     <div>
-      <Home />
+      <Layout />
     </div>
 
   );
